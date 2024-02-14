@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/7fb2b68ee1.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-book"></i>Porto Website</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#portfolio" class="navbar__links">Portfolio</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contact" class="navbar__links">Contact</a>
+                </li>
+            </ul>
+        </div>
+     </nav>
+    
+    <header>
+        <h1>Hello, I'm Revidio</h1>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+            <div class="photo">
+                <img src="PHOTO-2024-02-13-20-55-07.jpg" alt="My photo">
+            </div>
+        <p>Saya Merupakan seorang Mahasiswa berjurusan Teknik Informatika di Universitas Bina Nusantara dengan sasaran untuk lulus pada tahun 2027,
+            dengan ketertarikan dengan web development.
+        </p>
+        <h3>Education</h3>
+        <table>
+            <tr>
+                <th>Tahun</th>
+                <th>Pendidikan</th>
+                <th>Pendidikan Informal (Klub)</th>
+            </tr>
+            <tr>
+                <td>2017-2020</td>
+                <td>SMP Citra Kasih</td>
+                <td>Mengikuti Ekstrakurikuler Robotika, mempelajari menggunakan Arduino</td>
+            </tr>
+            <tr>
+                <td>2020-2023</td>
+                <td>SMAK 1 BPK Penabur, Mempelajari dan membuat program dengan bahasa pemrograman C dan Python</td>
+                <td>Mengikuti Club Catur selama 2 tahun</td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>Binus University, Mempelajari lebih dalam tentang konsep dan algoritma pemrograman dengan bahasa pemrograman C</td>
+                <td>Mengikuti Kelas LnT Front-End Development dan mempelajari HTML, CSS, dan Javascript</td>
+            </tr>
+        </table>
+
+        <h3>Skills</h3>
+        <div class="skill">
+        <img src="5847f5bdcef1014c0b5e489c.png" alt="HTML Logo">
+        <img src="css3-logo-png-transparent.png" alt="CSS Logo">
+        <img src="JavaScript-logo.png" alt="JavaScript Logo">
+        <img src="695px-C_Programming_Language.svg.png" alt="C Logo">
+        <img src="python-logo-transparent-5.png" alt="Python Logo">
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+
+        <div class="portfolio-item">
+            <a href=" https://revidio.github.io/TPMProject/">TPM Mini Project</a>
+            <p>Mini project tersebut merupakan project yang saya lakukan sebagai tugas untuk melatih semua kemampuan yang telah dipelajari selama TPM</p>
+        </div>
+
+        <div class="portfolio-item">
+            <a href="https://github.com/Revidio/SnakesGame">Snake Game</a>
+            <p>Permainan Ular yang dibuat dengan bahasa pemrograman C</p>
+        </div>
+
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="container">
+            <form action="" id="contactForm">
+                <div class="inputBox">
+                    <input type="text" id="name" placeholder="Your name...." required/>
+                </div>
+    
+                <div class="inputBox">
+                    <input type="email" id="emailid" placeholder="Your Email....." required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                </div>
+
+                <div class="inputBox">
+                    <input type="tel" id="Phone" placeholder="Whatsapp Number....."  required pattern="08\d{10,12}">
+                </div>
+    
+                <div class="inputBox">
+                    <textarea id="msgContent" cols="30" rows="10" placeholder="Message" required minlength="5" maxlength="100"></textarea>
+                </div>
+                
+                <div class="inputBox">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    
+    </section>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+<script src="app.js" type="module"></script>
+
+</html>

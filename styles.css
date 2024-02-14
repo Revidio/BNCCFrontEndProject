@@ -1,0 +1,249 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.navbar{
+    background: rgb(137, 205, 250);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo {
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, #fcfdfd 0%, #fbf4fc 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.fa-book{
+    margin-right: 0.5rem;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item{
+    height: 80px;
+}
+
+.navbar__links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+
+body {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3f3f3f;
+    color: #333;
+    background-image: url(BACKGROUND.png);
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    animation: fadeIn 2s;
+}
+
+header h1
+{
+  font-size: 60px;
+  background: linear-gradient(to right, rgb(84, 159, 251), rgb(255, 255, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section {
+    padding: 20px;
+    animation: fadeIn 2s;
+    background-color: rgba(255, 255, 255, 0.171);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+}
+
+#about h2
+{
+    font-size: 2.4rem;
+    background: linear-gradient(to right, rgb(128, 208, 254), rgb(254, 253, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px #333;
+}
+
+.photo img
+{
+    width: 300px;
+    height: 400px;
+}
+
+
+#about p
+{
+    font-size: 1.4rem;
+    background: linear-gradient(to right, rgb(128, 208, 254), rgb(254, 253, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#about h3
+{
+    font-size: 2rem;
+    background: linear-gradient(to right, rgb(128, 208, 254), rgb(254, 253, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 5px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    background: linear-gradient(to right, rgb(128, 208, 254), rgb(254, 253, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.skill img
+{
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    padding: 40px;
+}
+
+.portfolio-item {
+    margin: 20px;
+    padding: 15px;
+    background-color: #a8eef9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#portfolio h2
+{
+    font-size: 2rem;
+    background: linear-gradient(to right, rgb(128, 208, 254), rgb(254, 253, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.portfolio-item a
+{
+    font-size: 1.3rem;
+    background: #3f3f3f;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+#contact h2
+{
+    font-size: 2rem;
+    background: linear-gradient(to right, rgb(128, 208, 254), rgb(254, 253, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+form 
+{
+    margin-top: 20px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
